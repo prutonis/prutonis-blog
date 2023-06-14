@@ -61,10 +61,10 @@ params:
     enabled: true # needs to be explicitly set
     title: Ion Moroșanu
     subtitle: "Software Engineer"
-    imageUrl: https://www.emmegi.co.uk/wp-content/uploads/2019/01/User-Icon.jpg
+    imageUrl: /images/me-crop.png
     imageWidth: 120
     imageHeight: 120
-    imageTitle: my image
+    imageTitle: Me
     buttons:
       - name: Posts
         url: posts
