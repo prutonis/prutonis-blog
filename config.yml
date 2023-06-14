@@ -8,7 +8,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: G-XSMYEEM5EC
+#googleAnalytics: G-XSMYEEM5EC
 
 minify:
   disableXML: true
