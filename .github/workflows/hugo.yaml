@@ -35,6 +35,6 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
 #          github_token: ${{ secrets.GITHUB_TOKEN }}
-          deploy_key: ${{ secrets.PERSONAL_TOKEN }}
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
           external_repository: prutonis/prutonis.github.io
           publish_dir: ./public
