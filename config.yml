@@ -61,9 +61,9 @@ params:
     enabled: true # needs to be explicitly set
     title: Ion Moroșanu
     subtitle: "Software Engineer"
-    imageUrl: /images/me-crop.png
-    imageWidth: 120
-    imageHeight: 120
+    imageUrl: /images/me.jpg
+    imageWidth: 200
+    imageHeight: 200
     imageTitle: Me
     buttons:
       - name: Posts
