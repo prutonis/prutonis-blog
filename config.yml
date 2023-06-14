@@ -52,7 +52,7 @@ params:
     # safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "morosanu.io 🚀"
+    text: "🚀 morosanu.io 🚀"
     icon: /images/m-circle.png
     iconHeight: 35
 
