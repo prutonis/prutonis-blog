@@ -30,7 +30,7 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
@@ -52,7 +52,7 @@ params:
     # safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "My Awesome Blog"
+    text: "morosanu.io 🚀"
     icon: /images/m-circle.png
     iconHeight: 35
 
