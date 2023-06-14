@@ -52,7 +52,7 @@ params:
     # safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "My Blog"
+    text: "My Awesome Blog"
     icon: /images/m-circle.png
     iconHeight: 35
 
