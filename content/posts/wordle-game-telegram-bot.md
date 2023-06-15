@@ -8,8 +8,8 @@ categories: ['Coding']
 # Introduction
 Being mainly a Java programmer, I decided however to expand my area of knowledge and the fates fell on the Go language. 
 And the best way to learn is to apply, to practice what you learn!
-I usually prefer to do this by implementing a game or a tool that has some use. 
-So this time it's a game - [Wordle](https://en.wikipedia.org/wiki/Wordle) but implemented as a [Telegram Bot](https://core.telegram.org/bots).
+I usually prefer to do this by implementing a game or a tool that has some use.  
+So this time it's a game - [Wordle](https://en.wikipedia.org/wiki/Wordle), but implemented as a [Telegram Bot](https://core.telegram.org/bots).
 
 # Environment
 To run Go code, you need to install Go on your local computer. In my case, I'm using Windows 10, so I installed the latest version of Go, which is currently 1.20.5, from their [website](https://go.dev/dl/). For development, I use Visual Studio Code as my IDE.
@@ -33,7 +33,22 @@ The Wordle Game involves guessing a five-letter word chosen by the computer. You
  You can find the game implementation in this GitHub repository [https://github.com/prutonis/wordlebot](https://github.com/prutonis/wordlebot).
  Some key points to mention are that I used [yanzay](https://github.com/yanzay/tbot/)'s Bot library to communicate with Telegram Bot API. Also I used [zap](https://pkg.go.dev/go.uber.org/zap) library for logging, the [viper](https://github.com/spf13/viper) for storing and reading configuration files, and [GoDtoEnv](https://github.com/joho/godotenv) library for reading **.env** file where the Bot Token is stored.  
  
- 
+The entry point of the program is the `WordleBot()` function in [pkg/wordlebot/wbot.go](https://github.com/prutonis/wordlebot/blob/20c38a16c3c2749d987da2182bf64af74d332d5e/pkg/wordlebot/wbot.go) which is called from [main.go](https://github.com/prutonis/wordlebot/blob/20c38a16c3c2749d987da2182bf64af74d332d5e/main.go):
+ ```Go
+ func WordleBot() {
+	Chats = make(chats)
+	Bot = tbot.New(Token)
+	App.client = Bot.Client()
+	Bot.HandleMessage("/help", App.helpHandler)
+	Bot.HandleMessage("/start", App.startHandler)
+	Bot.HandleMessage("/giveup", App.giveUpHandler)
+	Bot.HandleMessage("/lang", App.languageHandler)
+	Bot.HandleMessage("^.{5}$", App.messagesHandler)
+	Bot.HandleCallback(App.callbackHandler)
+	log.Fatal(Bot.Start())
+}
+ ```
+## Play with Docker
 If you have access to a Docker instance, you can run the bot within seconds by following these instructions:
  1. Clone the repository
  ```git
@@ -64,3 +79,5 @@ You can choose between English and Romanian languages:
 
 An example of gameplay:
 ![gamplay.png](https://i.postimg.cc/fWYPpx0q/gameplay.png)
+
+You cand try the game with the Wordle bot instance: **[Wordle Telegram Bot](https://t.me/twordle_bot)**.
