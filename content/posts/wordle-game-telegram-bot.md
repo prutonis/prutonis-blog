@@ -1,5 +1,5 @@
 ---
-title: "Wordle Game Telegram Bot in Go"
+title: "Wordle: A Telegram Bot Game in Go"
 date: 2023-06-14T15:20:39+03:00
 tags: ['go', 'golang', 'game', 'telegram', 'bot']
 categories: ['Coding']
