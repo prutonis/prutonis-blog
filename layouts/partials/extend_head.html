@@ -12,4 +12,9 @@
   gtag('config', 'G-XSMYEEM5EC');
 </script>
 
+<!-- Add mermaid min js file -->
+{{ if (.Params.mermaid) }}
+{{ partial "mermaid.html" }}
+{{ end }}
+
 {{- /* Head custom content area end */ -}}

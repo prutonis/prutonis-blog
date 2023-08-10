@@ -114,6 +114,11 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
+
+  mermaid:
+    theme: "neutral"
+    align: "center"
+
 menu:
   main:
     - identifier: categories
