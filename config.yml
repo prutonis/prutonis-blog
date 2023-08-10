@@ -18,7 +18,7 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Ion Morosanu Blog Site
   description: "The description goes here"
-  keywords: [Blog, Portfolio, PaperMod]
+  keywords: [Blog, morosanu, java, golang, go, dev, web, groovy, arduino, raspberrypi]
   author: Ion Moroșanu
   # author: ["Me", "You"] # multiple authors
   #images: ["<link or path of image for opengraph, twitter-cards>"]
