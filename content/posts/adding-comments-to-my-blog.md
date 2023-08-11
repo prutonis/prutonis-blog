@@ -1,10 +1,11 @@
 ---
 title: "Adding Comments to My Blog"
 date: 2023-08-10T15:52:10+03:00
-draft: false
 tags: ['hugo', 'blog', 'site', 'generator', 'giscus', 'comments']
 keywords: ['hugo', 'blog', 'site', 'generator', 'giscus', 'comments']
 categories: ['Blog']
+showtoc: true
+tocopen: true
 ---
 
 # Motivation
@@ -81,10 +82,12 @@ params:
   ...
 ```
 
-### The result:
+###### The result:
 [![comments.png](https://i.postimg.cc/L6DWbh49/comments.png)](https://postimg.cc/VdS4Sfbp)
 
 # Wrap-Up
 Thanks to GitHub, I am able to both host my website and facilitate comments for it. This free feature provided by GitHub is truly invaluable. In the future, I intend to explore the possibility of implementing a self-hosted commenting system like [Commento](https://github.com/adtac/commento) or [StaticMan](https://staticman.net/), and I will be sharing my experience on the blog.
 
-P.S. Special thanks to [Justin Bird](https://www.justinjbird.me/about/) for the insightful [blog post](https://www.justinjbird.me/2023/adding-comments-to-a-hugo-site-using-giscus/) on setting up Giscus.
+P.S. Special thanks to [Justin Bird](https://www.justinjbird.me/about/) for the insightful [blog post](https://www.justinjbird.me/2023/adding-comments-to-a-hugo-site-using-giscus/) on setting up Giscus.  
+
+Feel free to share your thoughts and join the conversation by leaving a comment using the newly added comment section on my blog. Your input and feedback are highly appreciated!
