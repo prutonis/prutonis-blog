@@ -4,14 +4,14 @@ date: 2023-08-10T15:52:10+03:00
 tags: ['hugo', 'blog', 'site', 'generator', 'giscus', 'comments']
 keywords: ['hugo', 'blog', 'site', 'generator', 'giscus', 'comments']
 categories: ['Blog']
-showtoc: true
-tocopen: true
+showtoc: false
+tocopen: false
 ---
 
 # Motivation
 Being relatively new to the world of blogging, I quickly realized that my recently created website was missing a crucial element – reader feedback. It was evident that I needed to find a way to bridge this gap and encourage readers to voice their opinions and thoughts on my posts.
 
-# The Search for a Good Commenting Solution:
+# The Search for a Good Commenting Solution
 My website is on GitHub and uses [Hugo](https://gohugo.io/) static site generation. So, I needed a commenting solution that fits this setup. Even though Hugo supports Disqus for comments, my experience with it wasn't good due to its slow speed and ads. I found Giscus as an alternative. However, Giscus has its good sides, like using GitHub Discussion and being open-source, but it also has some possible drawbacks.
 Giscus might not have all the customization and features of other comment systems because it relies on GitHub Discussions, which could lead to to a less satisfactory commenting experience. Also, since it needs a GitHub account for commenting, people who don't want to make a separate account just to comment might not engage as much, especially if they want to stay private or don't know much about GitHub.
 
