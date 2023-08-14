@@ -32,7 +32,7 @@ The Wordle Game involves guessing a five-letter word chosen by the computer. You
 
  # Implementation
  You can find the game implementation in this GitHub repository [https://github.com/prutonis/wordlebot](https://github.com/prutonis/wordlebot).
- Some key points to mention are that I used [yanzay](https://github.com/yanzay/tbot/)'s Bot library to communicate with Telegram Bot API. Also I used [zap](https://pkg.go.dev/go.uber.org/zap) library for logging, the [viper](https://github.com/spf13/viper) for storing and reading configuration files, and [GoDtoEnv](https://github.com/joho/godotenv) library for reading **.env** file where the Bot Token is stored.  
+ Some key points to mention are that I used [yanzay](https://github.com/yanzay/tbot/)'s Bot library to communicate with Telegram Bot API. Also I used [zap](https://pkg.go.dev/go.uber.org/zap) library for logging, the [viper](https://github.com/spf13/viper) for storing and reading configuration files, and [GoDotEnv](https://github.com/joho/godotenv) library for reading **.env** file where the Bot Token is stored.  
  
 The entry point of the program is the `WordleBot()` function in [pkg/wordlebot/wbot.go](https://github.com/prutonis/wordlebot/blob/20c38a16c3c2749d987da2182bf64af74d332d5e/pkg/wordlebot/wbot.go) which is called from [main.go](https://github.com/prutonis/wordlebot/blob/20c38a16c3c2749d987da2182bf64af74d332d5e/main.go):
  ```Go
