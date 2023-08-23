@@ -3,10 +3,10 @@
   
     {{ $comments := readDir "data/comments" }}
     {{ $.Scratch.Add "hasComments" 0 }}
-    {{ $entryId := .UniqueID }}
+    {{ $postSlug := .File.BaseFileName }}
   
     {{ range $comments }}
-      {{ if eq .Name $entryId }}
+      {{ if eq .Name $postSlug }}
         {{ $.Scratch.Add "hasComments" 1 }}
         {{ range $index, $comments := (index $.Site.Data.comments $entryId ) }}
           <div class="post-comment">
