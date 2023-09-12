@@ -1,5 +1,10 @@
 {{- /* Comments area start */ -}}
 
-{{ partial "giscus" . }}
+{{- if (eq (.Site.Params.disableComments | default false) false) -}}
+    {{- if (eq (.Params.disableComments | default false) false) -}}
+        {{ partial "staticman-comments" . }}
+    {{- end -}}
+{{- end -}}
+
 
 {{- /* Comments area end */ -}}
