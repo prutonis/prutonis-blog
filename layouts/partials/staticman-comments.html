@@ -12,7 +12,10 @@
           <div class="post-comment">
             <div class="post-comment-header">
               <img class="post-comment-avatar" src="https://www.gravatar.com/avatar/{{ .email }}?s=100">
-              <p class="post-comment-info"><strong>{{ .name }}</strong><br>{{ dateFormat "02/01/2006" .date }}</p>
+              <div class="post-comment-info">
+                <div class="post-comment-name"><strong>{{ .name }}</strong></div>
+                <div class="post-comment-date">{{ dateFormat "02/01/2006" .date }}</div>
+              </div>
             </div>
             {{ .message | markdownify }}
           </div>
@@ -24,14 +27,16 @@
       <p>Nothing yet.</p>
     {{ end }}
   
-    <h3>Say something</h3>
+    <h3 style="margin-top: 1em;">Say something</h3>
   
     <form class="post-new-comment" method="POST" action="https://ghcomments.onrender.com/v3/entry/github/prutonis/prutonis-blog/onrender/comments">
     <!--form class="post-new-comment" method="POST" action="http://localhost:8055/v2/entry/eduardoboucas/staticman-test/master/comments"-->
       <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#comment-submitted">
       <input type="hidden" name="options[slug]" value="{{ .File.BaseFileName }}">
-      <input name="fields[name]" type="text" class="post-comment-field" placeholder="Your name">
-      <input name="fields[email]" type="email" class="post-comment-field" placeholder="Your email address">
+      <div class="name-email-container">
+        <input name="fields[name]" type="text" class="post-comment-field" placeholder="Your name">
+        <input name="fields[email]" type="email" class="post-comment-field" placeholder="Your email address">
+      </div>
       <textarea name="fields[message]" class="post-comment-field" placeholder="Your message. Feel free to use Markdown." rows="10"></textarea>
       <input type="submit" class="post-comment-field btn" value="Submit">
     </form>
@@ -40,7 +45,7 @@
   <div id="comment-submitted" class="dialog">
   <h3>Thank you</h3>
     <p>Your comment has been submitted and will be published once it has been approved.</p>
-    <p><a href="https://github.com/eduardoboucas/hugo-plus-staticman/pulls">Click here</a> to see the pull request you generated.</p>
+    <p><a href="https://github.com/prutonis/prutonis-blog/pulls"><b>Click here</b></a> to see the pull request you generated.</p>
     
     <p><a href="#" class="btn">OK</a></p>
   </div>

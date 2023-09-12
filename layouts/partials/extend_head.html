@@ -2,6 +2,15 @@
 {{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
 {{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
 
+{{- if (eq (.Site.Params.comments | default true) true) -}}
+  {{- if (eq (.Site.Params.disableComments | default false) false) -}}
+      {{- if (eq (.Params.disableComments | default false) false) -}}
+        <link rel="stylesheet" href="/css/comments.css">
+      {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XSMYEEM5EC"></script>
 <script>

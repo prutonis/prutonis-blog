@@ -1,0 +1,129 @@
+/* Style the comment section container */
+.post-comments {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+/* Style the "Comments" heading */
+.post-comments h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style individual comments */
+.post-comment {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* Style the comment header (avatar, name, date) */
+.post-comment-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-comment-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-comment-info {
+  /* font-weight: bold; */
+}
+
+/* Style the comment message */
+.post-comment p {
+  margin: 0;
+}
+
+/* Style the "Nothing yet" message */
+.post-comments p {
+  font-style: italic;
+  color: #888;
+  margin-top: 10px;
+}
+
+/* Style the "Say something" heading */
+.post-comments h3:last-child {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Style the comment form */
+.post-new-comment {
+  margin-top: 20px;
+}
+
+.post-comment-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.post-comment-field.btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Style the comment submitted dialog */
+.dialog {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.dialog h3 {
+  font-size: 24px;
+}
+
+.dialog p {
+  margin: 10px 0;
+}
+
+.dialog .btn {
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Show the dialog when needed */
+.dialog:target {
+  display: block;
+}
+
+/* Style the name and email container */
+.name-email-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Adjust the width of the inputs within the container */
+.name-email-container input {
+  width: 48%;
+  /* Adjust width for name and email inputs */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
