@@ -29,8 +29,7 @@
   
     <h3 style="margin-top: 1em;">Say something</h3>
   
-    <form class="post-new-comment" method="POST" action="https://ghcomments.onrender.com/v3/entry/github/prutonis/prutonis-blog/onrender/comments">
-    <!--form class="post-new-comment" method="POST" action="http://localhost:8055/v2/entry/eduardoboucas/staticman-test/master/comments"-->
+    <form class="post-new-comment" method="POST" action="https://ghcomments.onrender.com/v3/entry/github/prutonis/prutonis-blog/main/comments">
       <input type="hidden" name="options[redirect]" value="{{ .Permalink }}#comment-submitted">
       <input type="hidden" name="options[slug]" value="{{ .File.BaseFileName }}">
       <div class="name-email-container">
